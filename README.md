@@ -52,6 +52,10 @@ Omsetra is an independent product. No Razorpay endorsement, partnership approval
 
 ## About this repository
 
-This is Omsetra's public product and feedback repository. It contains product documentation and launch material; it is not the application source distribution. No open-source software license is granted by this repository.
+This repository contains product documentation, launch material, a static product page and the full tracked application source as [omsetra-application-source.zip](omsetra-application-source.zip). Read the [source guide](SOURCE-GUIDE.md) for setup, export boundaries and hosting requirements. Credentials, private databases and Git history are excluded. No open-source software license is granted by this repository.
+
+The source is currently packaged as an archive rather than a browsable application tree. Publishing this snapshot does not move the production database or configure automatic deployment from GitHub.
+
+Promotion work is tracked in [PROMOTION-TRACKER.md](PROMOTION-TRACKER.md), with tailored drafts in [SUBMISSION-COPY.md](SUBMISSION-COPY.md). Drafts are not claims of submitted or accepted listings.
 
 See the [roadmap](ROADMAP.md), [launch kit](LAUNCH-KIT.md) and [security guidance](SECURITY.md).
