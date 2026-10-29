@@ -8,6 +8,8 @@ An early-access reconciliation and collections workspace for Indian founders, sm
 
 **[Try the free interactive demo](https://astrobharat-studio.hp909145.chatgpt.site/demo)** · **[Create a workspace](https://astrobharat-studio.hp909145.chatgpt.site/signup)** · **[Product website](https://astrobharat-studio.hp909145.chatgpt.site/)**
 
+**[GitHub-hosted product page](https://omi811.github.io/omsetra/)** · **[Preview announcement](https://github.com/Omi811/omsetra/releases/tag/v0.1.0-preview.1)**
+
 > **Launch status:** Explore with fictional data before signing up. Live payments and merchant Razorpay connections remain disabled pending partner approval and configuration. Omsetra does not hold or settle merchant funds.
 
 ## Who is it for?
