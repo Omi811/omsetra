@@ -1,0 +1,5 @@
+import {eq,and} from 'drizzle-orm';
+import {getDb} from '../../../../db';
+import {businesses,businessProducts} from '../../../../db/schema';
+import {reply,connectionFor,paymentReady} from '../../../../lib/tenant-server';
+export async function GET(_request:Request,{params}:{params:Promise<{id:string}>}){try{const {id}=await params;const db=getDb();const [b]=await db.select().from(businesses).where(eq(businesses.id,id));if(!b)return reply({error:'Store not found.'},404);const products=await db.select({id:businessProducts.id,name:businessProducts.name,description:businessProducts.description,amount:businessProducts.amount,category:businessProducts.category,duration:businessProducts.duration}).from(businessProducts).where(and(eq(businessProducts.businessId,b.id),eq(businessProducts.active,1)));const c=await connectionFor(b.id);return reply({business:{id:b.id,name:b.name,description:b.description,email:b.supportEmail,address:b.address,terms:b.terms,privacy:b.privacy,refunds:b.refunds,policyVersion:b.termsVersion},products,ready:paymentReady(b,c),mode:c?.mode||'preview'})}catch{return reply({error:'Store unavailable.'},503)}}

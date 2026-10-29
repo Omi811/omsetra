@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1792592113555,
+      "tag": "0000_dear_molecule_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1792643930949,
+      "tag": "0001_shallow_spitfire",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1792647270378,
+      "tag": "0002_nifty_thor_girl",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1792677754590,
+      "tag": "0003_misty_xavin",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1792844899469,
+      "tag": "0004_marvelous_eternals",
+      "breakpoints": true
+    }
+  ]
+}

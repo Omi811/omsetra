@@ -1,29 +1,15 @@
-# Application source snapshot
+# Application source
 
-`omsetra-application-source.zip` contains the application's tracked source, database migrations, tests, vendored license notices and dependency lockfile, exported from commit `4645ec0d544950f281a2b5774f42f54ba340e82b`.
-
-This is a source archive, not a binary build or a backup of production users. Git history, generated builds, runtime databases, uploaded documents, environment files, credentials and the original Sites project ID are excluded. `SOURCE-SHA256.txt` inside the archive records file hashes.
+The browsable source tree is now in [application/](application/). It contains 183 tracked source files from commit `4645ec0d544950f281a2b5774f42f54ba340e82b`, plus the snapshot metadata and per-file checksums. The original ZIP remains as a historical snapshot.
 
 ## Local development
 
-1. Extract the archive into its own folder.
-2. Install Node.js 22.13 or newer and Git.
-3. Run `npm ci` in the extracted folder.
-4. Run `npm run dev` for the loopback development preview.
-5. See the included original README, SETUP.md and RECONCILIATION-MVP.md for local D1 migration instructions and existing limitations.
+Install Node.js 22.13 or newer and Git. Run `cd application`, `npm ci`, then `npm run dev`. A fresh local D1 database requires the migrations described in [application/README.md](application/README.md) and [application/SETUP.md](application/SETUP.md). Portable mock identity is for loopback development only.
 
-The portable developer preview uses a local mock identity. A fresh local database requires migrations; an empty database is not an application failure. No real merchant credentials are included.
+## Publication boundaries
 
-Verification on the original source snapshot: TypeScript check, production build and 38 tests passed on 26 October 2026. This export does not claim that every alternative hosting environment has been tested.
+Credentials, environment files, production databases, user uploads, Git history and the original hosting project ID are excluded. All 183 file checksums and the archive SHA-256 were verified before import. Existing application code was preserved byte for byte.
 
-## Production hosting
+GitHub Pages serves the static product-information page only. The authenticated application and database stay on existing hosting. No automatic deployment synchronization has been configured. Live payments remain disabled pending Razorpay approval, configuration and testing.
 
-GitHub stores source; GitHub Pages can serve the static product information page. The application also needs a Worker runtime, D1 database, trusted authentication and runtime secrets. GitHub Pages alone cannot run its authenticated APIs or payment backend.
-
-The existing live application stays at https://astrobharat-studio.hp909145.chatgpt.site/ . Publishing this archive does not move the database, configure GitHub-to-Sites deployment synchronization or turn on payments.
-
-To establish a normal browsable Git source tree later, extract this archive in an authorized clone of Omi811/omsetra, review it, commit it and push through that account's normal Git authentication. Do not overwrite existing product documentation without merging it. The live Sites source repository remains separate until an explicit supported deployment integration is configured.
-
-## License
-
-Publishing source does not itself grant an open-source license. Retain all included third-party license notices. Omsetra's own license remains undecided; do not describe this repository as open source until a license is chosen.
+No open-source license for Omsetra has been selected. Retain all included third-party license notices. Source availability does not itself grant an open-source license.

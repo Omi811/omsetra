@@ -45,3 +45,8 @@ Use channel-tagged demo links, for example `?utm_source=launchingnext&utm_medium
 - Published [public preview announcement](https://github.com/Omi811/omsetra/releases/tag/v0.1.0-preview.1), marked pre-release and explicitly stating that live payments are disabled pending approval, configuration and testing.
 - Submitted Launching Next's free listing after the owner supplied the contact and authorized human verification. [Receipt #170248](https://www.launchingnext.com/thanks/?i=170248) shows Submission Received and In Queue, with a current estimated wait of four months. This is a submission receipt, not an accepted or public listing. The description explicitly states live payments are pending Razorpay approval. No newsletter subscription or paid fast-track upgrade was selected. The submitted contact email is not repeated in this public tracker.
 - No accepted external directory listing, LinkedIn post, X post or paid promotion is claimed. Other account-dependent channels remain pending.
+
+
+## Source-tree import completed
+
+All 183 tracked source files are now browsable under [application/](application/), with every file hash verified against the published snapshot. The previous ZIP-only limitation is resolved. Automatic deployment synchronization and moving the production database remain outside this import. No payment settings were changed.

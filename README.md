@@ -56,8 +56,17 @@ Omsetra is an independent product. No Razorpay endorsement, partnership approval
 
 This repository contains product documentation, launch material, a static product page and the full tracked application source as [omsetra-application-source.zip](omsetra-application-source.zip). Read the [source guide](SOURCE-GUIDE.md) for setup, export boundaries and hosting requirements. Credentials, private databases and Git history are excluded. No open-source software license is granted by this repository.
 
-The source is currently packaged as an archive rather than a browsable application tree. Publishing this snapshot does not move the production database or configure automatic deployment from GitHub.
+The application source is now browsable under application/. The historical ZIP remains available. The production database and application hosting remain separate; automatic deployment from GitHub is not configured.
 
 Promotion work is tracked in [PROMOTION-TRACKER.md](PROMOTION-TRACKER.md), with tailored drafts in [SUBMISSION-COPY.md](SUBMISSION-COPY.md). Drafts are not claims of submitted or accepted listings.
 
 See the [roadmap](ROADMAP.md), [launch kit](LAUNCH-KIT.md) and [security guidance](SECURITY.md).
+
+
+## Browse the application source
+
+The full tracked application source is now committed under [application/](application/), including APIs, UI, database migrations, tests and the dependency lockfile. The historical ZIP remains available as a snapshot. Existing product pages and campaign documents remain at the repository root.
+
+For local development, install Node.js 22.13 or newer, then run `cd application`, `npm ci` and `npm run dev`. See [application/SETUP.md](application/SETUP.md) for D1 migrations and authentication requirements.
+
+Live payments remain disabled pending Razorpay approval, configuration and testing. This source import does not deploy the app, transfer the database, configure provider credentials or enable payments. The existing application hosting remains separate.

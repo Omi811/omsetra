@@ -1,0 +1,5 @@
+export type LaunchItem={id:string;label:string;done:boolean;detail:string};
+export default function LaunchChecklist({items,compact=false}:{items:LaunchItem[];compact?:boolean}){
+ const completed=items.filter(i=>i.done).length;
+ return <section className={'launch-checklist '+(compact?'compact':'')} aria-label="Launch readiness"><div className="readiness-heading"><div><span className="eyebrow">ONE STEP AT A TIME</span><h3>Your launch checklist</h3></div><span className="badge pending">{completed}/{items.length}</span></div><div className="progress" aria-label={`${completed} of ${items.length} setup steps complete`}><div style={{width:(items.length?completed/items.length*100:0)+'%'}}/></div><ol>{items.map(i=><li key={i.id} className={i.done?'complete':''}><span className="readiness-mark" aria-hidden="true">{i.done?'✓':'○'}</span><div><b>{i.label}<span className="sr-only"> — {i.done?'Complete':'Pending'}</span></b>{!compact&&<p>{i.detail}</p>}</div></li>)}</ol><p className="readiness-note">Saved progress updates automatically. Partner approval and platform checks are completed by Omsetra.</p></section>
+}

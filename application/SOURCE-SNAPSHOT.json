@@ -1,0 +1,14 @@
+{
+  "exportedAt": "2026-10-29",
+  "sourceCommit": "4645ec0d544950f281a2b5774f42f54ba340e82b",
+  "fileCount": 183,
+  "excluded": [
+    "Git history",
+    "runtime credentials",
+    "environment files",
+    "databases and user uploads",
+    "generated builds",
+    "original hosting project ID"
+  ],
+  "livePaymentsEnabled": false
+}
